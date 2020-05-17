@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;1,800&display=swap" rel="stylesheet">
+    <body>
+    <header class='header'>
+        <div class="container">
+            <div class="head">
+                <div class="head__logo head__item">
+                   <h1 class="head__logo__content">Weather forecast company</h1> 
+                </div>
+                <div class="head__search head__item">
+                    <input type="text" class='head__search__text' disabled> 
+                    <img src="img/find.svg" class='head__find' alt="find">   
+                </div>
+                <div class="head__date head__item"><span id="day"></span>.<span id="month"></span>.<span id="year"></span> <span id="time"></span>
+            </div>
+        </div>
+        <nav class="nav">
+                <div class="nav__today">Today</div>
+                
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+
+            <div class="upper-content">
+            <h2 class="upper-content__heading">current weather</h2>
+            <div class="upper-content__current-weather">
+                <div class="upper-content__picture">
+                    <img class='upper-content__photo' alt="weather-picture">
+                    <div class="upper-content__name">Sunny</div>
+                </div>
+                <div class="upper-content__temp">
+                    <div class="upper-content__degree"></div>
+                    <div class="upper-content__feel">Real feel <span id='realfeel'></span></div>
+                </div>
+                <div class="upper-content__sun-info">
+                    <div class="upper-content__sunrise">Sunrise: <span id='sunrise'></span></div>
+                    <div class="upper-content__sunset">Sunset: <span id='sunset'></span></div>
+                    
+                </div>
+            </div>
+            <h2 class="upper-content__heading">wind information</h2>
+            <div class="mid-content__wrapper">
+                <div class="mid-content__item">
+                    <div class="mid-content__time">direction</div>
+                    <div class="mid-content__sky-info">SPEED</div>
+                </div>
+                <div class="mid-content__item">
+                    <div class="mid-content__time" id='wind-time'></div>
+                    <div class="mid-content__sky-info" id='wind-speed'></div>
+                </div>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
